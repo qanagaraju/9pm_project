@@ -1,0 +1,11 @@
+java -jar  D:\Softwares\jenkins.war --httpPort=8081
+
+ ul > li:nth-child(1)
+ul>li>a span:nth-child(3)
+
+PASS new Wifi password 112530068204
+
+8008250000
+
+
+

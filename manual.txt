@@ -1,0 +1,81 @@
+
+
+Test Lifecycle
+Unit Test
+Integration test
+System test
+UAT Test
+
+Development lifecycle
+
+Software Testing LifeCycle
+
+Agile methodology 
+V - Model
+
+Fish Model
+
+Blackbox testing technics
+
+Typical black-box test design techniques include:
+Decision table testing.
+All-pairs testing.
+Equivalence partitioning.
+Boundary value analysis.
+Cause–effect graph.
+Error guessing.
+State transition testing.
+Use case testing.
+
+White-box test design techniques include the following code coverage criteria:
+Control flow testing.
+Data flow testing.
+Branch testing.
+Statement coverage.
+Decision coverage.
+Modified condition/decision coverage.
+Prime path testing.
+Path testing.
+
+What Are the Different Types of Testing?
+There are many different types of testing. Here is a quick breakdown of the most common testing types:
+
+
+Types of Testing
+
+User Acceptance Testing Types
+Accessibility testing
+Acceptance testing
+Alpha Testing
+Beta Testing
+Usability Testing
+
+System Testing Types
+Black box testing
+Database Testing
+End-to-end testing
+Functional testing
+Integration testing
+Regression testing
+Sanity testing
+Security testing
+Smoke testing
+
+Non_Functional Testing types
+Single user performance testing
+Stress testing
+Unit testing
+White box testing
+And many more...
+
+
+Non functional testing types are
+Performance testing
+Load testing
+Stress Testing
+volume testing
+Scalability testing
+
+
+
+

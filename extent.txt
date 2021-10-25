@@ -1,0 +1,52 @@
+	public static ExtentReports report;
+	public static ExtentTest logger;
+
+//report = new ExtentReports("./myfiles/testreport.html",true);
+	logger=report.startTest("sample extent test");
+	
+	Apploginpage=PageFactory.initElements(driver,AppObjects.class);
+	Apploginpage.getusername(config.getusername(),config.getpassword());
+	Apploginpage.clickloginbutton();
+	
+	ElementCapture.captureScreenshot(driver, "button");
+	logger.log(LogStatus.PASS,"Clicking button");
+	
+	
+	String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	
+	
+	
+}
+
+@AfterMethod
+public void getextentresult(ITestResult result) {
+	
+	if(result.getStatus()==ITestResult.FAILURE) {
+		
+		String screenShotPath = ElementCapture.captureScreenshot(driver, "test");
+		String image = logger.addScreenCapture(screenShotPath);
+		logger.log(LogStatus.FAIL,"screenshot",image);
+		
+	}
+	
+	report.endTest(logger);
+}
+
+	
+@AfterClass
+public void endExtents() {
+	
+	report.flush();
+	report.close();
+}
+
+
+set projectLocation=C:\Users\Admin\Desktop\STMSeleniumTutorial\workspace\SoftwareTestingMaterial
+ 
+cd %projectLocation%
+ 
+set classpath=%projectLocation%\bin;%projectLocation%\lib\*
+ 
+java org.testng.TestNG %projectLocation%\testng.xml
+ 
+pause

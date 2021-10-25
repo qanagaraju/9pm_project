@@ -1,0 +1,28 @@
+java -jar  D:\Softwares\jenkins.war --httpPort=8081
+
+@hourly, @daily, @weekly, @monthly, @midnight
+
+@hourly --> Build every hour at the beginning of the hour --> 0 * * * *
+
+@daily, @midnight --> Build every day at midnight --> 0 0 * * *
+
+@weekly --> Build every week at midnight on Sunday morning --> 0 0 * * 0
+
+@monthly --> Build every month at midnight of the first day of the month --> 0 0 1 * *
+
+@Every minute */5 * * * *
+
+==================================
+Schedule	Job
+* * * * *	echo “Run cron job every minute”
+*/5 * * * *	echo “Run cron job every 5 minutes”
+*/30 * * * *	echo “Run cron job every 30 minutes”
+0 * * * *	echo “Run cron job every hour”
+0 */3 * * *	echo “Run cron job every 3 hours”
+0 13 * * *	echo “Run cron job every day at 1pm”
+30 2 * * *	echo “Run cron job every day at 2.30am”
+0 0 * * *	echo “Run cron job every day at midnight”
+0 0 * * 0	echo “Run cron job every Sunday”
+0 0 * * 1	echo “Run cron job every Monday”
+0 0 1 * *	echo “Run cron job every first day of every month”
+0 0 1 1 *	echo “Run cron job every first of January every year”
